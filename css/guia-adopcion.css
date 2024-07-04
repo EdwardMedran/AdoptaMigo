@@ -1,0 +1,64 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    line-height: 1.6; /* Espacio entre líneas */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    /* ... (Estilos del encabezado como en el ejemplo anterior) ... */
+}
+
+/* Guía de adopción */
+#guia-adopcion {
+    padding: 80px 0;
+}
+
+#guia-adopcion h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 50px; /* Margen inferior para separar del contenido */
+}
+
+.pasos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive */
+    gap: 30px;
+}
+
+.paso {
+    background-color: #f8f8f8; /* Fondo gris claro */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.paso i {
+    font-size: 3em;
+    color: #f89100; /* Naranja */
+    margin-bottom: 20px;
+}
+
+.paso h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Pie de página */
+footer {
+    /* ... (Estilos del pie de página como en el ejemplo anterior) ... */
+}

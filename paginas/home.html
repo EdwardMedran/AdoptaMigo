@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>AdoptAmigo</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="../imagenes/logo.png" alt="AdoptaMigo Logo">
+            <h1>AdoptaMigo</h1>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#">Inicio</a></li>
+                <li class="header__nav-item"><a href="../paginas/search-pet.html">Buscar Mascotas</a></li>
+                <li class="header__nav-item"><a href="../paginas/recursos.html">Recursos</a></li>
+                <li class="header__nav-item"><a href="../paginas/nosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="welcome">
+            <h1 class="welcome__title">¡Bienvenidos a AdoptaMigo!</h1>
+            <p class="welcome__description">Descubre tu nuevo mejor amigo y dale un hogar lleno de amor.</p>
+        </section>
+
+        <section class="search">
+            <select id="tipo" class="search__select">
+                <option value="">Seleccione un tipo de mascota</option>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="conejo">Conejo</option>
+            </select>
+            <button class="search__button" onclick="saveInput()">Buscar</button>
+        </section>
+
+        <section class="featured-pets">
+            <h2 class="featured-pets__title">Mascotas Destacadas</h2>
+            <div class="featured-pets__list">
+                <article class="pet">
+                    <img class="pet__image" src="../imagenes/buddy.png" alt="Buddy">
+                    <h3 class="pet__name">Buddy</h3>
+                    <p class="pet__details">Labrador Retriever, 2 años</p>
+                </article>
+                <article class="pet">
+                    <img class="pet__image" src="../imagenes/luna.png" alt="Luna">
+                    <h3 class="pet__name">Luna</h3>
+                    <p class="pet__details">Siamés, 3 años</p>
+                </article>
+                <article class="pet">
+                    <img class="pet__image" src="../imagenes/thumper.png" alt="Thumper">
+                    <h3 class="pet__name">Thumper</h3>
+                    <p class="pet__details">Conejo, 1 año</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2 class="testimonials__title">Testimonios</h2>
+            <div class="testimonials__list">
+                <article class="testimonial">
+                    <img src="../imagenes/testimonio1.png" alt="Testimonio 1">
+                    <p class="testimonial__text">"Adoptamos a Max hace seis meses y no podríamos estar más felices. ¡Es
+                        el mejor perro del mundo!" - Familia González</p>
+                </article>
+                <article class="testimonial">
+                    <img src="../imagenes/testimonio2.png" alt="Testimonio 2">
+                    <p class="testimonial__text">"Luna ha traído tanta alegría a nuestras vidas. ¡Gracias Pet Adoption!"
+                        - Marta y Juan</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="news">
+            <h2 class="news__title">Novedades/Blog</h2>
+            <div class="news__list">
+                <article class="news-item">
+                    <img class="news-item__image" src="../imagenes/evento.png" alt="Evento de Adopción">
+                    <h3 class="news-item__title">Evento de Adopción</h3>
+                    <p class="news-item__details">Únete a nuestro próximo evento de adopción el 20 de octubre. ¡Habrá
+                        muchas mascotas esperando por ti!</p>
+                </article>
+                <article class="news-item">
+                    <img class="news-item__image" src="../imagenes/consejos.png" alt="Consejos de Adopción">
+                    <h3 class="news-item__title">Consejos de Adopción</h3>
+                    <p class="news-item__details">Lee nuestros mejores consejos para una adopción exitosa y cómo
+                        preparar tu hogar para una nueva mascota.</p>
+                </article>
+                <article class="news-item">
+                    <img class="news-item__image" src="../imagenes/historia.png" alt="Historia de Éxito">
+                    <h3 class="news-item__title">Historia de Éxito</h3>
+                    <p class="news-item__details">Conoce la historia de Max y su increíble transformación desde que fue
+                        adoptado.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__contact">
+            <h3 class="footer__contact-title">Contacto</h3>
+            <p>Email: <a href="mailto:contacto@adoptamigo.com">contacto@adoptamigo.com</a></p>
+            <p>Teléfono: +34 123 456 789</p>
+        </div>
+        <div class="footer__legal">
+            <h3 class="footer__legal-title">Enlaces Legales</h3>
+            <p><a href="../paginas/terminos-condiciones.html">Términos y Condiciones</a></p>
+            <p><a href="../paginas/politica-privacidad.html">Política de Privacidad</a></p>
+        </div>
+        <div class="footer__rights">
+            <h3 class="footer__rights-title">Derechos de autor</h3>
+            <p>&copy; 2024 AdoptaMigo.</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/mascotasadopcion.comOficial/"><img src="../imagenes/facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/?lang=es"><img src="../imagenes/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/"><img src="../imagenes/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+        function saveInput() {
+            const input1Value = document.getElementById('tipo').value;
+            localStorage.setItem('tipo', input1Value);
+            location.href = 'search-pet.html';
+        }
+    </script>
+</body>
+
+</html>

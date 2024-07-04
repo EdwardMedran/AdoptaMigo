@@ -1,0 +1,43 @@
+
+/* Estilos generales del cuerpo (body) */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina rellenos predeterminados */
+    background-color: #f2f2f2; /* Fondo gris claro */
+}
+
+/* Estilos del contenido principal */
+.main-content {
+    padding: 30px; /* Espacio interno alrededor del contenido */
+    background-color: white; /* Fondo blanco para el contenido */
+    margin-top: 20px; /* Margen superior para separar del encabezado */
+    max-width: 900px; /* Ancho máximo del contenido */
+    margin: 20px auto; /* Centra el contenido horizontalmente */
+}
+
+/* Estilos para los títulos de las secciones (H1, H2) */
+h1 {
+    text-align: center; /* Centra el título principal */
+    font-size: 2em; /* Tamaño de fuente grande */
+    color: #333; /* Color de texto gris oscuro */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+h2 {
+    font-size: 1.5em; /* Tamaño de fuente mediano */
+    color: #ff7043; /* Color naranja para destacar */
+    margin-top: 30px; /* Margen superior */
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilos para párrafos y listas */
+p, ul, ol {
+    margin-bottom: 15px; /* Margen inferior para separar elementos */
+    line-height: 1.6; /* Interlineado más amplio para mejorar legibilidad */
+}
+
+/* Estilos opcionales para mejorar la apariencia */
+ul, ol {
+    padding-left: 30px; /* Sangría para listas */
+}

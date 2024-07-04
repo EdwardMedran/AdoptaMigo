@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdoptaMigo</title>
+    <link rel="stylesheet" href="../css/buscar-mascotas.css">
+    <script src="../js/scripts2.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../paginas/home.html">Inicio</a></li>
+                <li class="header__nav-item"><a href="../paginas/formato-adopcion.html">Formulario de Adopcion</a></li>
+                <li><a href="../paginas/recursos.html">Recursos</a></li>
+                <li class="header__nav-item"><a href="../paginas/nosotros.html">Sobre Nosotros</a></li>
+ 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="detalle-mascota">
+            <div class="carousel">
+                <button class="carousel-button prev" onclick="previousPet()">&#9664;</button>
+                <img id="pet-image" src="../imagenes/Golden.jpg" alt="Golden Retriever">
+                <button class="carousel-button next" onclick="nextPet()">&#9654;</button>
+            </div>
+            <div class="info">
+                <div class="detalles">
+                    <h2 id="pet-name">Golden Retriever</h2>
+                    <p><strong>Edad:</strong> <span id="pet-age">6 meses</span></p>
+                    <p><strong>Raza:</strong> <span id="pet-breed">Golden Retriever</span></p>
+                    <p><strong>Tamaño:</strong> <span id="pet-size">Grande</span></p>
+                    <p><strong>Salud:</strong> <span id="pet-health">Vacunado, Desparasitado</span></p>
+                    <p><strong>Historia:</strong> <span id="pet-history">Rescatado de la calle necesita un hogar amoroso</span></p>
+                </div>
+                <div class="ubicacion">
+                    <h2>Ubicación del Refugio</h2>
+                    <img id="map-image" src="../imagenes/mapagolden.jpg" alt="Mapa del Refugio">
+                </div>
+            </div>
+            <div class="acciones">
+                <div>
+                <button><a href="../paginas/formato-adopcion.html">Iniciar proceso de adopcion</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contacto">
+            <p><strong>Contacto</strong></p>
+            <p>Email: <a href="mailto:contacto@adoptamigo.com">contacto@adoptamigo.com</a></p>
+            <p>Teléfono: +34 123 456 789</p>
+        </div>
+        <div class="legales">
+            <p><strong>Enlaces Legales</strong></p>
+            <p><a href="../paginas/terminos-condiciones.html">Términos y Condiciones</a></p>
+            <p><a href="../paginas/politica-privacidad.html">Política de Privacidad</a></p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 AdoptaMigo. <br>Todos los derechos reservados.</p>
+        </div>
+        <div class="social">
+            <a href="https://x.com/?lang=es"><img src="../imagenes/twiter.jpg" alt="Twitter"></a>
+            <a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=AfdsPIK8Y9eC6iUggutR3fGZfDxH-EX1BHniMPrCI3dXG9_xhVVEh82SgdY5kZEqaxqhLmrPC0MMWIc8SXDNdNTt78LlZXrUGzGc-xwEGwLGjQ&smuh=22885&lh=Ac_PT9BdjneUtmDbfR4"><img src="../imagenes/facebook.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="../imagenes/instagram.jpg" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* Ejemplo de tipografía */
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.logo img {
+    max-height: 80px; /* Ajusta el tamaño del logo */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+nav a:hover {
+    color: #f89100; /* Naranja al pasar el ratón */
+}
+
+.btn-donar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f89100;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: auto; /* Empujar el botón a la derecha */
+}
+
+/* Hero */
+.hero-image {
+    background-image: url("hero-image.jpg"); /* Reemplazar con la imagen real */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px; /* Limitar el ancho del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f89100;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ... (Estilos para las secciones de mascotas, recursos, sobre nosotros y contacto) ... */
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+/* Estilos generales, encabezado y pie de página como en ejemplos anteriores */
+
+/* Estilos específicos para FAQ */
+#faq {
+    padding: 1px 0;
+}
+
+.faq-accordion {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    background-color: #f8f8f8;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.2em;
+    display: left;
+    justify-content: left;
+    align-items: center;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 400px; /* Ajusta según la longitud de las respuestas */
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+.div {
+    
+}
